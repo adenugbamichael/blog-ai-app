@@ -2,6 +2,9 @@
   "name": "blog-ai-app",
   "version": "0.1.0",
   "private": true,
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,6 +13,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@prisma/client": "^4.16.2",
     "@tailwindcss/line-clamp": "^0.4.4",
     "next": "latest",
     "react": "latest",
@@ -17,14 +21,16 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "latest",
+    "@types/node": "^20.8.2",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "postcss": "latest",
+    "prisma": "^4.16.2",
     "tailwindcss": "latest",
-    "typescript": "latest"
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   }
 }

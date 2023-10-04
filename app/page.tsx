@@ -2,6 +2,7 @@ import Tech from "./(home)/Tech"
 import Travel from "./(home)/Travel"
 import Trending from "./(home)/Trending"
 import Other from "./(shared)/Other"
+import Sidebar from "./(shared)/Sidebar"
 import Subscribe from "./(shared)/Subscribe"
 
 export default function Home() {
@@ -17,7 +18,9 @@ export default function Home() {
             <Subscribe />
           </div>
         </div>
-        <div className='basis-1/4'>{/* <Sidebar /> */}</div>
+        <div className='basis-1/4'>
+          <Sidebar />
+        </div>
       </div>
     </main>
   )

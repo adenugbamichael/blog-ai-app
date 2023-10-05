@@ -1,4 +1,4 @@
-// import { Post } from "@prisma/client"
+import { Post } from "@prisma/client"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
@@ -30,7 +30,7 @@ const Card = ({
         className='basis-full hover:opacity-70'
         href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}
       >
-        {/* <div className={`relative w-auto mb-3 ${imageHeight}`}>
+        <div className={`relative w-auto mb-3 ${imageHeight}`}>
           <Image
             fill
             alt='tech'
@@ -42,7 +42,7 @@ const Card = ({
                   33vw'
             style={{ objectFit: "cover" }}
           />
-        </div> */}
+        </div>
       </Link>
       <div className='basis-full'>
         <Link href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}>

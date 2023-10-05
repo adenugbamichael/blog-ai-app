@@ -29,9 +29,6 @@ const config: Config = {
       md: "1060px",
     },
   },
-  plugins: [
-    require("@tailwindcss/line-clamp"),
-    require("@tailwindcss/typography"),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 }
 export default config

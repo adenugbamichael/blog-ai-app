@@ -45,9 +45,9 @@ const Trending = ({ trendingPosts }: Props) => {
   return (
     <section className='pt-3 pb-10'>
       <div className='flex items-center gap-3'>
-        <div className='bg-wh-900 py-2 px-8 text-wh-10 text-sm font-bold'>
+        <h5 className='bg-wh-900 py-2 px-8 text-wh-10 text-sm font-bold'>
           TRENDING
-        </div>
+        </h5>
         <p className='text-sm'>
           Nunc enim lobortis quam risus et feugiat nibh eu ornare. Molestie sit
           nulla dolor diam turpis.

@@ -11,7 +11,7 @@ const Other = ({ otherPosts }: Props) => {
     <section className='pt-4 mb-16'>
       <hr className='border-1' />
       {/* HEADER */}
-      <p className='font-bold text-2xl my-8'>Other Trending Posts</p>
+      <h5 className='font-bold text-2xl my-8'>Other Trending Posts</h5>
       <div className='sm:grid grid-cols-2 gap-16'>
         <Card
           className='mt-5 sm:mt-0'

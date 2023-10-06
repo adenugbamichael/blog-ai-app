@@ -18,7 +18,9 @@
     "@tiptap/pm": "^2.1.11",
     "@tiptap/react": "^2.1.11",
     "@tiptap/starter-kit": "^2.1.11",
+    "axios": "^1.5.1",
     "next": "latest",
+    "openai": "^4.11.1",
     "react": "latest",
     "react-dom": "latest"
   },

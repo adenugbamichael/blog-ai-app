@@ -10,22 +10,23 @@ export async function POST(request: Request, response: any) {
   try {
     const { title, role } = await request.json()
 
-    const chatCompletion: AxiosResponse = await openai.chat.completions.create({
-      model: "gpt-4-turbo",
-      messages: [
-        {
-          role: "user",
-          // content: `Create small blog post with html tags based on this title: ${title}`,
-          content: `Create 3 line blog post with html tags based on this title: ${title}`,
-        },
-        {
-          role: "system",
-          content: `${
-            role || "I am a helpful assistant"
-          }. Write with html tags.`,
-        },
-      ],
-    })
+    const chatCompletion: AxiosResponse<any, any> =
+      await openai.chat.completions.create({
+        model: "gpt-4-turbo",
+        messages: [
+          {
+            role: "user",
+            // content: `Create small blog post with html tags based on this title: ${title}`,
+            content: `Create 3 line blog post with html tags based on this title: ${title}`,
+          },
+          {
+            role: "system",
+            content: `${
+              role || "I am a helpful assistant"
+            }. Write with html tags.`,
+          },
+        ],
+      })
 
     // console.log(chatCompletion.choices)
 
